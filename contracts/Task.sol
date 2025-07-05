@@ -13,11 +13,8 @@ contract Task{
 
     // replace `function PiggyBank public()` to `constructor()`
     constructor() {
+        
     }
-    
-
-
-
 
     mapping(bytes8 => uint) public romanValues;
     
