@@ -11,7 +11,7 @@ contract Voting {
         owner = msg.sender;
     }
 
-    //一个vote函数，允许用户投票给某个候选人
+    //1：创建一个名为Voting的合约，包含以下功能：
     function vote(address voter) public {
         //不能投票给自己
         require(msg.sender != voter," Cannot vote for oneself ");
@@ -22,8 +22,6 @@ contract Voting {
             voterExists[voter] = true;
         }
     }
-//0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB
-//0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c
 
     function getVotes (address voter) public view returns (uint256){
         return voterMap[voter];
@@ -39,5 +37,5 @@ contract Voting {
         return 1;
     }
 
-
+    
 }
