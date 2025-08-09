@@ -3,6 +3,8 @@ pragma solidity ^0.8.0;
 
 
 contract BeggingContract {
+
+    
     
     mapping(address => uint256) public donatePriceMap; //记录adderss捐赠金额
     address public owner; //合约发布者
@@ -86,5 +88,5 @@ contract BeggingContract {
         return (topDonors, topDonations); //返回前三名捐赠者和对应金额
     }
 
-    
+
 }
